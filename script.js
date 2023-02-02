@@ -18,3 +18,11 @@ window.addEventListener("scroll", function () {
   let header = document.querySelector("header");
   header.classList.toggle("sticky", window.scrollY > 0);
 });
+
+const toggleMenu = document.querySelector(".toggle");
+const navigation = document.querySelector(".navbar");
+
+toggleMenu.onclick = function () {
+  toggleMenu.classList.toggle("active");
+  navigation.classList.toggle("active");
+};
