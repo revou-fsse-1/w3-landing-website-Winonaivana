@@ -1,10 +1,10 @@
-@media (max-width: 992px) {
+@media (max-width: 1000px) {
   header {
     padding: 20px;
   }
 
   header .logo {
-    font-size: 1.5sem;
+    font-size: 15px;
   }
   header ul.navbar {
     display: none;
@@ -44,6 +44,38 @@
     background-repeat: no-repeat;
     z-index: 1000;
   }
+
+  section img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    pointer-events: none;
+  }
+
+  section img#splash {
+    z-index: -1;
+    height: 900px;
+  }
+
+  section img#red {
+    display: none;
+  }
+
+  section img#coca {
+    width: 1000px;
+    position: relative;
+    left: -315px;
+  }
+
+  section #text {
+    display: none;
+  }
+  section #btn {
+    display: none;
+  }
 }
 
 .toggle.active {
@@ -51,4 +83,145 @@
   background-size: 30px;
   background-position: center;
   background-position: no-repeat;
+}
+
+@media (max-width: 1400px) {
+  #text {
+    position: absolute;
+    right: 800px;
+    color: #fff;
+    white-space: nowrap;
+    font-size: 70px;
+    z-index: 9;
+  }
+
+  #btn {
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 30px;
+    border-radius: 40px;
+    background: #fff;
+    color: #000;
+    font-size: 1.5em;
+    position: absolute;
+    right: 1020px;
+    top: 450px;
+  }
+}
+@media (max-width: 1300px) {
+  section img#splash {
+    z-index: -1;
+    height: 800px;
+  }
+
+  section img#red {
+    display: none;
+  }
+}
+
+@media (max-width: 1200px) {
+  section img#splash {
+    z-index: -1;
+    height: 800px;
+  }
+
+  section img#red {
+    display: none;
+  }
+  #text {
+    position: absolute;
+    right: 700px;
+    color: #fff;
+    white-space: nowrap;
+    font-size: 70px;
+    z-index: 9;
+  }
+
+  #btn {
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 30px;
+    border-radius: 40px;
+    background: #fff;
+    color: #000;
+    font-size: 1.5em;
+    position: absolute;
+    right: 920px;
+    top: 450px;
+  }
+}
+
+@media (max-width: 1100px) {
+  section img#splash {
+    z-index: -1;
+    height: 800px;
+  }
+
+  section img#red {
+    display: none;
+  }
+  #text {
+    position: absolute;
+    right: 600px;
+    color: #fff;
+    white-space: nowrap;
+    font-size: 70px;
+    z-index: 9;
+  }
+
+  #btn {
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 30px;
+    border-radius: 40px;
+    background: #fff;
+    color: #000;
+    font-size: 1.5em;
+    position: absolute;
+    right: 820px;
+    top: 450px;
+  }
+}
+
+@media (max-width: 1060px) {
+  section img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    pointer-events: none;
+  }
+
+  section img#splash {
+    z-index: -1;
+    height: 800px;
+  }
+
+  section img#red {
+    display: none;
+  }
+
+  #text {
+    position: absolute;
+    right: 500px;
+    color: #fff;
+    white-space: nowrap;
+    font-size: 70px;
+    z-index: 9;
+  }
+
+  #btn {
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 30px;
+    border-radius: 40px;
+    background: #fff;
+    color: #000;
+    font-size: 1.5em;
+    position: absolute;
+    right: 720px;
+    top: 450px;
+  }
 }
