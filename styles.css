@@ -173,7 +173,7 @@ section img#splash {
   justify-content: center;
 }
 .box1 {
-  background-image: url(original.png);
+  background-image: url(flavours/original.png);
   background-position: center;
   background-repeat: no-repeats;
   background-size: 100px;
@@ -186,7 +186,7 @@ section img#splash {
 }
 
 .box2 {
-  background-image: url(cherry2.png);
+  background-image: url(flavours/cherry2.png);
   background-position: center;
   background-repeat: no-repeats;
   background-size: 100px;
@@ -199,7 +199,7 @@ section img#splash {
 }
 
 .box3 {
-  background-image: url(vanilla.png);
+  background-image: url(flavours/vanilla.png);
   background-position: center;
   background-repeat: no-repeats;
   background-size: 100px;
@@ -212,7 +212,7 @@ section img#splash {
 }
 
 .box4 {
-  background-image: url(cherryvanilla.png);
+  background-image: url(flavours/cherryvanilla.png);
   background-position: center;
   background-repeat: no-repeats;
   background-size: 100px;
@@ -224,7 +224,7 @@ section img#splash {
 }
 
 .box5 {
-  background-image: url(zerocaffeine.png);
+  background-image: url(flavours/zerocaffeine.png);
   background-position: center;
   background-repeat: no-repeats;
   background-size: 100px;
@@ -237,7 +237,7 @@ section img#splash {
 }
 
 .box6 {
-  background-image: url(Starlight.png);
+  background-image: url(flavours/Starlight.png);
   background-position: center;
   background-repeat: no-repeats;
   background-size: 100px;
@@ -307,7 +307,7 @@ section img#splash {
 }
 .bx1 {
   height: 827.2px;
-  background-image: url(cocktail6.png);
+  background-image: url(mixes/cocktail6.png);
   background-position: center;
   background-size: 1670px;
   grid-area: bx1;
@@ -320,7 +320,7 @@ section img#splash {
 }
 
 .bx2 {
-  background-image: url(cocktail.png);
+  background-image: url(mixes/cocktail.png);
   background-position: center;
   background-size: 900px;
   grid-area: bx2;
@@ -333,7 +333,7 @@ section img#splash {
 }
 
 .bx3 {
-  background-image: url(cocktail2.jpg);
+  background-image: url(mixes/cocktail2.jpg);
   background-position: center;
   background-size: 400px;
   grid-area: bx3;
@@ -346,7 +346,7 @@ section img#splash {
 }
 
 .bx4 {
-  background-image: url(cocktail3.jpg);
+  background-image: url(mixes/cocktail3.jpg);
   background-position: center;
   background-size: 400px;
   grid-area: bx4;
@@ -358,7 +358,7 @@ section img#splash {
 }
 
 .bx5 {
-  background-image: url(cocktail4.jpg);
+  background-image: url(mixes/cocktail4.jpg);
   background-position: center;
   background-size: 400px;
   grid-area: bx5;
