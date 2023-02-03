@@ -4,7 +4,7 @@
   }
 
   header .logo {
-    font-size: 15px;
+    font-size: 30px;
   }
   header ul.navbar {
     display: none;
@@ -18,7 +18,7 @@
     align-items: center;
     flex-direction: column;
     width: 100%;
-    height: 100vh;
+    height: 50vh;
     background: black;
   }
 
@@ -67,7 +67,7 @@
   section img#coca {
     width: 1000px;
     position: relative;
-    left: -315px;
+    left: -310px;
   }
 
   section #text {
@@ -75,6 +75,62 @@
   }
   section #btn {
     display: none;
+  }
+
+  .container1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+      "bx1 bx1 bx1"
+      "bx2 bx2 bx2"
+      "bx3 bx4 bx5";
+  }
+  .bx {
+    height: 200px;
+    width: auto;
+    border-radius: 10px;
+
+    background: white;
+    transition: all 0.8s;
+    cursor: pointer;
+  }
+
+  .bx1 {
+    background-image: url(cocktail6.png);
+    background-position: center;
+    background-size: 1670px;
+    grid-area: bx1;
+  }
+
+  .bx2 {
+    background-image: url(cocktail.png);
+    background-position: center;
+    background-size: 500px;
+    grid-area: bx2;
+  }
+
+  .bx3 {
+    background-image: url(cocktail2.jpg);
+    background-position: center;
+    background-size: 280px;
+    grid-area: bx3;
+  }
+
+  .bx4 {
+    background-image: url(cocktail3.jpg);
+    background-position: center;
+    background-size: 280px;
+    background-repeat: no-repeat;
+    grid-area: bx4;
+  }
+
+  .bx5 {
+    background-image: url(cocktail4.jpg);
+    background-position: center;
+    background-size: 280px;
+
+    grid-area: bx5;
   }
 }
 
@@ -88,7 +144,7 @@
 @media (max-width: 1400px) {
   #text {
     position: absolute;
-    right: 800px;
+    right: 900px;
     color: #fff;
     white-space: nowrap;
     font-size: 70px;
@@ -130,7 +186,7 @@
   }
   #text {
     position: absolute;
-    right: 700px;
+    right: 800px;
     color: #fff;
     white-space: nowrap;
     font-size: 70px;
@@ -154,7 +210,7 @@
 @media (max-width: 1100px) {
   section img#splash {
     z-index: -1;
-    height: 800px;
+    height: 700px;
   }
 
   section img#red {
@@ -162,7 +218,7 @@
   }
   #text {
     position: absolute;
-    right: 600px;
+    right: 700px;
     color: #fff;
     white-space: nowrap;
     font-size: 70px;
@@ -205,7 +261,7 @@
 
   #text {
     position: absolute;
-    right: 500px;
+    right: 600px;
     color: #fff;
     white-space: nowrap;
     font-size: 70px;
@@ -223,5 +279,311 @@
     position: absolute;
     right: 720px;
     top: 450px;
+  }
+}
+
+@media (max-width: 950px) {
+  form .fav-drink .fav-title {
+    font-size: 20px;
+    font-weight: 500;
+  }
+
+  form .fav-drink .drinkss {
+    display: flex;
+    flex-wrap: wrap;
+
+    width: 70%;
+    margin: 2px 0;
+    justify-content: space-between;
+  }
+
+  form .drinks {
+    flex-direction: column;
+  }
+
+  .fav-drink .drinks label {
+    display: flex;
+    align-items: center;
+  }
+
+  .fav-drink .drinks2 label {
+    display: flex;
+    align-items: center;
+  }
+
+  .fav-drink .drinks {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 16px 0;
+  }
+
+  .fav-drink .drinks2 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 16px 0;
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 580px) {
+  .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, auto));
+    grid-gap: 1.7rem;
+    align-items: center;
+    margin-top: 5rem;
+  }
+
+  .box {
+    height: 200px;
+    width: auto;
+    border-radius: 10px;
+    overflow: hidden;
+    background: white;
+    transition: all 0.8s;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .container1 {
+    display: grid;
+    grid-template-columns: 0.5fr 0.5fr 0.5fr;
+    grid-template-rows: 0.5fr 0.5fr 0.5fr;
+    grid-template-areas:
+      "bx1 bx1 bx1"
+      "bx2 bx2 bx2"
+      "bx3 bx4 bx5";
+  }
+  .box1 {
+    background-image: url(original.png);
+    background-position: center;
+    background-repeat: no-repeats;
+    background-size: 100px;
+  }
+
+  .box1:hover {
+    transform: translateY(20px);
+    transition: all 0.5s ease;
+    opacity: 0.6;
+  }
+
+  .box2 {
+    background-image: url(cherry2.png);
+    background-position: center;
+    background-repeat: no-repeats;
+    background-size: 100px;
+  }
+
+  .box2:hover:hover {
+    transform: translateY(20px);
+    transition: all 0.5s ease;
+    opacity: 0.6;
+  }
+
+  .box3 {
+    background-image: url(vanilla.png);
+    background-position: center;
+    background-repeat: no-repeats;
+    background-size: 100px;
+  }
+
+  .box3:hover {
+    transform: translateY(20px);
+    transition: all 0.5s ease;
+    opacity: 0.6;
+  }
+
+  .box4 {
+    background-image: url(cherryvanilla.png);
+    background-position: center;
+    background-repeat: no-repeats;
+    background-size: 100px;
+  }
+  .box4:hover {
+    transform: translateY(20px);
+    transition: all 0.5s ease;
+    opacity: 0.6;
+  }
+
+  .box5 {
+    background-image: url(zerocaffeine.png);
+    background-position: center;
+    background-repeat: no-repeats;
+    background-size: 100px;
+  }
+
+  .box5:hover {
+    transform: translateY(20px);
+    transition: all 0.5s ease;
+    opacity: 0.6;
+  }
+
+  .box6 {
+    background-image: url(Starlight.png);
+    background-position: center;
+    background-repeat: no-repeats;
+    background-size: 100px;
+  }
+  .box6:hover {
+    transform: translateY(20px);
+    transition: all 0.5s ease;
+    opacity: 0.6;
+  }
+  .in {
+    position: absolute;
+    color: black;
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 1px;
+  }
+
+  .in {
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 30px;
+    border-radius: 40px;
+    background: #fff;
+    color: black;
+    font-size: 1em;
+  }
+  .bx {
+    height: 180px;
+    width: auto;
+    border-radius: 10px;
+
+    background: white;
+    transition: all 0.8s;
+    cursor: pointer;
+  }
+
+  .bx1 {
+    background-image: url(cocktail6.png);
+    background-position: center;
+    background-size: 1300px;
+    grid-area: bx1;
+  }
+
+  .bx2 {
+    background-image: url(cocktail.png);
+    background-position: center;
+    background-size: 500px;
+    grid-area: bx2;
+  }
+
+  .bx3 {
+    background-image: url(cocktail2.jpg);
+    background-position: center;
+    background-size: 200px;
+    grid-area: bx3;
+  }
+
+  .bx4 {
+    background-image: url(cocktail3.jpg);
+    background-position: center;
+    background-size: 200px;
+    background-repeat: no-repeat;
+    grid-area: bx4;
+  }
+
+  .bx5 {
+    background-image: url(cocktail4.jpg);
+    background-position: center;
+    background-size: 200px;
+
+    grid-area: bx5;
+  }
+}
+
+@media (max-width: 515px) {
+  .container1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+      "bx1"
+      "bx2"
+      "bx3"
+      "bx4"
+      "bx5";
+  }
+  .bx {
+    height: 200px;
+    width: auto;
+    border-radius: 10px;
+
+    background: white;
+    transition: all 0.8s;
+    cursor: pointer;
+  }
+
+  .bx1 {
+    background-image: url(cocktail6.png);
+    background-position: center;
+    background-size: 1200px;
+    grid-area: bx1;
+  }
+
+  .bx1:hover {
+    transform: translateY(20px);
+    transition: all 0.5s ease;
+    opacity: 0.6;
+  }
+
+  .bx2 {
+    background-image: url(cocktail.png);
+    background-position: center;
+    background-size: 500px;
+    grid-area: bx2;
+  }
+
+  .bx2:hover:hover {
+    transform: translateY(20px);
+    transition: all 0.5s ease;
+    opacity: 0.6;
+  }
+
+  .bx3 {
+    background-image: url(cocktail2.jpg);
+    background-position: center;
+    background-size: 380px;
+    grid-area: bx3;
+  }
+
+  .bx3:hover {
+    transform: translateY(20px);
+    transition: all 0.5s ease;
+    opacity: 0.6;
+  }
+
+  .bx4 {
+    background-image: url(cocktail3.jpg);
+    background-position: center;
+    background-size: 470px;
+    background-repeat: no-repeat;
+    grid-area: bx4;
+  }
+  .bx4:hover {
+    transform: translateY(20px);
+    transition: all 0.5s ease;
+    opacity: 0.6;
+  }
+
+  .bx5 {
+    background-image: url(cocktail4.jpg);
+    background-position: center;
+    background-size: 470px;
+
+    grid-area: bx5;
+  }
+
+  .bx5:hover {
+    transform: translateY(20px);
+    transition: all 0.5s ease;
+    opacity: 0.6;
   }
 }

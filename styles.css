@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Allura&family=Great + Vibes&family=Kaushan + Script&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -12,7 +12,6 @@ body {
   min-height: 100vh;
   overflow-x: hidden;
   background-color: black;
-
   justify-content: center;
   align-items: center;
 }
@@ -33,7 +32,9 @@ header .logo {
   font-weight: 700;
   text-decoration: none;
   font-size: 2em;
-  text-transform: uppercase;
+  font-family: "Allura", cursive;
+
+  text-transform: none;
   letter-spacing: 2px;
 }
 
@@ -106,10 +107,11 @@ section img#splash {
 
 #text {
   position: absolute;
-  right: 900px;
+  right: 1000px;
   color: #fff;
-  white-space: nowrap;
   font-size: 70px;
+  font-family: "Allura", cursive;
+  text-align: left;
   z-index: 9;
 }
 
@@ -140,7 +142,7 @@ section img#splash {
   font-size: 40px;
   color: white;
   letter-spacing: 0.5px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 .heading p {
@@ -264,6 +266,110 @@ section img#splash {
   font-size: 1.5em;
 }
 
+.heading1 {
+  text-align: center;
+}
+
+.heading1 h2 {
+  font-size: 40px;
+  color: white;
+  letter-spacing: 0.5px;
+  margin-bottom: 30px;
+}
+
+.heading1 p {
+  color: white;
+  font-size: 15px;
+  line-height: 28px;
+}
+
+.container1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    "bx1 bx2 bx2 bx2"
+    "bx1 bx3 bx4 bx5";
+  grid-gap: 1.7rem;
+  align-items: center;
+  margin-top: 4rem;
+  padding: 27.2px;
+}
+
+.bx {
+  height: 400px;
+  width: auto;
+  border-radius: 10px;
+
+  background: white;
+  transition: all 0.8s;
+  cursor: pointer;
+}
+.bx1 {
+  height: 827.2px;
+  background-image: url(cocktail6.png);
+  background-position: center;
+  background-size: 1670px;
+  grid-area: bx1;
+}
+
+.bx1:hover {
+  transform: translateY(20px);
+  transition: all 0.5s ease;
+  opacity: 0.6;
+}
+
+.bx2 {
+  background-image: url(cocktail.png);
+  background-position: center;
+  background-size: 900px;
+  grid-area: bx2;
+}
+
+.bx2:hover:hover {
+  transform: translateY(20px);
+  transition: all 0.5s ease;
+  opacity: 0.6;
+}
+
+.bx3 {
+  background-image: url(cocktail2.jpg);
+  background-position: center;
+  background-size: 400px;
+  grid-area: bx3;
+}
+
+.bx3:hover {
+  transform: translateY(20px);
+  transition: all 0.5s ease;
+  opacity: 0.6;
+}
+
+.bx4 {
+  background-image: url(cocktail3.jpg);
+  background-position: center;
+  background-size: 400px;
+  grid-area: bx4;
+}
+.bx4:hover {
+  transform: translateY(20px);
+  transition: all 0.5s ease;
+  opacity: 0.6;
+}
+
+.bx5 {
+  background-image: url(cocktail4.jpg);
+  background-position: center;
+  background-size: 400px;
+  grid-area: bx5;
+}
+
+.bx5:hover {
+  transform: translateY(20px);
+  transition: all 0.5s ease;
+  opacity: 0.6;
+}
+
 #form-section {
   background: black;
   color: white;
@@ -321,7 +427,9 @@ form .gender-details .gender-title {
 
 form .gender-details .category {
   display: flex;
-  width: 80%;
+  flex-wrap: wrap;
+
+  width: 70%;
   margin: 14px 0;
   justify-content: space-between;
 }
@@ -365,31 +473,48 @@ form .button input {
   font-size: 18px;
   font-weight: 500;
   border-radius: 5px;
-  background: white;
+  background: red;
 }
 
 form .button input:hover {
-  background: red;
+  background: white;
 }
 
 form .fav-drink .fav-title {
   font-size: 20px;
   font-weight: 500;
+  position: relative;
 }
-
-form .fav-drink .drinks {
+.fav-drink .drinkss {
   display: flex;
-  width: 80%;
-  margin: 14px 0;
+
+  flex-wrap: wrap;
+
+  width: 70%;
+  margin: 16px 0;
   justify-content: space-between;
 }
 
-.fav-drink .drinks label {
+.fav-drink .drinkss label {
   display: flex;
+
   align-items: center;
 }
 
 form input[type="checkbox"] {
   width: 20px;
   height: 20px;
+}
+
+form .message label {
+  margin-bottom: 15px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+form .message {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
 }

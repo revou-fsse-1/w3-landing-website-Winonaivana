@@ -7,17 +7,18 @@
     <title>Document</title>
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="responsive.css" />
+   
   </head>
   <body>
     <header>
 
-      <a href="#" class="logo">Logo</a>
+      <a href="#" class="logo">Coca-Cola</a>
       <div class="toggle"></div>
       <ul class="navbar">
-        <li><a href="#" class="active">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Work</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="#coca" class="active">Home</a></li>
+        <li><a href="#sec">Flavours</a></li>
+        <li><a href="#">Mixes</a></li>
+        <li><a href="#form-section">Contact</a></li>
       </ul>
     
     </header>
@@ -27,7 +28,7 @@
       <img src="red.png" id="red" />
       <img src="splash.jpg" id="splash">
 
-      <h2 id="text">Coca Cola</h2>
+      <h2 id="text">Coca-Cola</h2>
       <a href="#sec" id="btn">Explore</a>
     </section>
     <div class="sec" id="sec">
@@ -70,6 +71,43 @@
       </div>
     </div>
 
+    <div class="assymetrical" id="assymetrical">
+      <div class="heading1">
+        <h2>Mixes</h2>
+        <p>Coca cola can be mixed with a variety of drinks.</p>
+      </div>
+      <div class="container1">
+        <div class="bx bx1">
+          <div class="n">
+            
+          </div>
+        </div>
+        <div class="bx bx2">
+          <div class="n">
+           
+          </div>
+        </div>
+        <div class="bx bx3">
+          <div class="n">
+            
+          </div>
+        </div>
+        <div class="bx bx4">
+          <div class="n">
+            
+          </div>
+        </div>
+        <div class="bx bx5">
+          <div class="n">
+            
+          </div>
+        </div>
+       
+      </div>
+      </div>
+
+    </div>
+
 
 
 <div id="form-section">
@@ -79,28 +117,28 @@
           <div class="user-details">
             <div class="input-box">
               <span class="details">Full Name</span>
-              <input type="text" placeholder="Enter yout name">
+              <input type="text" placeholder="Smith" required>
             </div>
 
              <div class="input-box">
               <span class="details">Username</span>
-              <input type="text" placeholder="Enter your username">
+              <input type="text" placeholder="Smith123" required>
             </div>
              <div class="input-box">
               <span class="details">Email</span>
-              <input type="text" placeholder="Enter your email">
+              <input type="text" placeholder="example@gmail.com" required>
             </div>
              <div class="input-box">
               <span class="details">Phone Number</span>
-              <input type="text" placeholder="Enter your number">
+              <input type="text" placeholder="xxx" required>
             </div>
              <div class="input-box">
               <span class="details">Password</span>
-              <input type="text" placeholder="Enter your password">
+              <input type="text" placeholder="***" required>
             </div>
              <div class="input-box">
               <span class="details">Confirm Password</span>
-              <input type="text" placeholder="Confirm your password">
+              <input type="text" placeholder="***" required>
             </div>
           </div>
           <div class="gender-details">
@@ -128,25 +166,37 @@
           
 
             <span class="fav-title">Favourite Drink</span>
-            <div class="drinks">
-              <label for="square-1">Original</label>
-              <input type="checkbox" name="drink" id="square-1">
-              
+            <div class="drinkss">
+               <div class="drinks">
+                 <label for="square-1">Original</label>
+                 <input type="checkbox" name="drink" id="square-1">
+               
              
-              <label for="square-2">Cherry</label>
-              <input type="checkbox" name="drink" id="square-2">
-              <label for="square-3">Vanilla</label>
-               <input type="checkbox" name="drink" id="square-3">
-              <label for="square-4">Cherry Vanilla</label>
-               <input type="checkbox" name="drink" id="square-4">
-              <label for="square-5">Zero Caffeine</label>
-               <input type="checkbox" name="drink" id="square-5">
-              <label for="square-6">Starlight</label>
-               <input type="checkbox" name="drink" id="square-6">
-            
-
+                 <label for="square-2">Cherry</label>
+                   <input type="checkbox" name="drink" id="square-2">
+                  <label for="square-3">Vanilla</label>
+                  <input type="checkbox" name="drink" id="square-3">
+               </div>
+                
+                 
+                 <div class="drinks2">
+                   <label for="square-4">Cherry Vanilla</label>
+                  <input type="checkbox" name="drink" id="square-4">
+                  <label for="square-5">Zero Caffeine</label>
+                  <input type="checkbox" name="drink" id="square-5">
+                  <label for="square-6">Starlight</label>
+                  <input type="checkbox" name="drink" id="square-6">
+                 </div>
+  
             </div>
 
+          </div>
+
+          <div class="message">
+            <label for="message">Message</label>
+            <textarea 
+            name="message" id="message" rows="7"
+            ></textarea>
           </div>
           <div class="button">
             <input type="submit" value="Register">
